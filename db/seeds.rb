@@ -6,5 +6,5 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Team.create!(name: 'Barcelona FC', city: 'Barcelona', country: 'Spain', coach: 'Luis Enrique')
-Team.create!(name: 'Real Madrid FC', city: 'Madrid', country: 'Spain', coach: 'Carlo Ancelotti')
+# Team.create!(name: 'Barcelona FC', city: 'Barcelona', country: 'Spain', coach: 'Luis Enrique')
+# Team.create!(name: 'Real Madrid FC', city: 'Madrid', country: 'Spain', coach: 'Carlo Ancelotti')
