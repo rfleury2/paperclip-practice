@@ -2,11 +2,15 @@
 <% @teams.each do |team| %>
   <div class='team'>
     <h2><%= team.name %></h2>
-    <%= image_tag team.shield.url(:medium) %>
-    <h5>City - <%= team.city %></h5>
-    <h5>Country - <%= team.country %></h5>
-    <h5>Coach - <%= team.coach %></h5>
+    <aside><%= image_tag team.shield.url(:thumb) %></aside>
+    <section>
+      <h5>City - <%= team.city %></h5>
+      <h5>Country - <%= team.country %></h5>
+      <h5>Coach - <%= team.coach %></h5>
+    </section>
   </div>
   <hr>
 <% end %>
-<%= link_to "Add new team", new_team_path %>
+<div class='new-team'>
+  <%= link_to "Add new team", new_team_path %>
+</div>

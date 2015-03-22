@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+.team {
+  clear: both;
+}
+
+.new-team {
+  clear: both;
+}
+
+aside {
+  float: left;
+  margin-right: 20px;
+}
+
+section {
+}

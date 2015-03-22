@@ -1,6 +1,6 @@
 class Team < ActiveRecord::Base
 
-  has_attached_file :shield, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/assets/images/missing.png"
+  has_attached_file :shield, :styles => { :medium => "300x300>", :thumb => "100x100>" }# Not needed since it is obligatory, :default_url => "/assets/images/missing.png"
   validates_attachment_content_type :shield, :content_type => /\Aimage\/.*\Z/
 
   validates :name, presence: true
