@@ -1,5 +1,11 @@
 <h1>Teams</h1>
 <% @teams.each do |team| %>
-
+  <div class='team'>
+    <h2><%= team.name %></h2>
+    <h5>City - <%= team.city %></h5>
+    <h5>Country - <%= team.country %></h5>
+    <h5>Coach - <%= team.coach %></h5>
+  </div>
+  <hr>
 <% end %>
 <%= link_to "Add new team", new_team_path %>
