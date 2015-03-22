@@ -2,6 +2,7 @@
 <% @teams.each do |team| %>
   <div class='team'>
     <h2><%= team.name %></h2>
+    <%= image_tag team.shield.url(:medium) %>
     <h5>City - <%= team.city %></h5>
     <h5>Country - <%= team.country %></h5>
     <h5>Coach - <%= team.coach %></h5>

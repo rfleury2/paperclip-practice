@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150322165024) do
+ActiveRecord::Schema.define(version: 20150322175553) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,10 @@ ActiveRecord::Schema.define(version: 20150322165024) do
     t.string   "coach"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "shield_file_name"
+    t.string   "shield_content_type"
+    t.integer  "shield_file_size"
+    t.datetime "shield_updated_at"
   end
 
 end
