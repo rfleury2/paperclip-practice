@@ -1,4 +1,11 @@
 <h1>Create new team</h1>
+<% if @errors %>
+  <% @errors.full_messages.each do |error| %>
+    <p><%= error %></p>
+  <% end  %>
+<% end %>
+
+
 <%= form_for :team, url: teams_path do |f| %>
   <p>
     <%= f.label :name, "Name:" %>
@@ -21,5 +28,4 @@
   </p>
 
   <%= f.submit "Create Team" %>
-
 <% end %>
