@@ -1,0 +1,25 @@
+<h1>Create new team</h1>
+<%= form_for :team, url: teams_path do |f| %>
+  <p>
+    <%= f.label :name, "Name:" %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :city, "City:" %>
+    <%= f.text_field :city %>
+  </p>
+
+  <p>
+    <%= f.label :country, "Country:" %>
+    <%= f.text_field :country %>
+  </p>
+
+  <p>
+    <%= f.label :coach, "Coach:" %>
+    <%= f.text_field :coach %>
+  </p>
+
+  <%= f.submit "Create Team" %>
+
+<% end %>
